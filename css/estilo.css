@@ -1,4 +1,5 @@
 body{
+
 	    	background-image: url(../img/ceu.jpg); 	    	 
 		    background-color:#1d3557;
 		    font-size: 20px;
@@ -10,11 +11,7 @@ body{
 div{
 	    	font-size: 1em;
 	    	color: #F4F3EE;
-	    	border: 5px double;
-	        border-color: #fff;	       
-    	    border-radius: 12px; 
-	        border-width: 3px 15px;
-	    		   	
+	    	
 }
 
 
@@ -28,25 +25,28 @@ h1,h2{
 
 
 p{	      
-	        text-align: justify;
+	        text-align: center;
 	        font-size: 25px; 
 	        font-style:italic;
-	        color:  #F4F3EE;	        
-	         	         	  
+	        color:  #F4F3EE;	        	         	         	  
 }
 
 
 
 figure{
     	    text-align: center; 
+    	    border: 7px double;
+	        border-color: #4682B4;	       
+    	    border-radius: 12px;
+	        border-width: 2px 15px;
     	   
     	        	   
 } 
 img { 
-	        width: 90%;
+	        width: 100%;
  }
 
-ul li{     
+ul, ol, li{     
 	       font-size: 25px;
 	       color:#F4F3EE; 
 
@@ -55,7 +55,7 @@ ul li{
 a:link {
   color: green;
   background-color: transparent;
-  text-decoration: none;
+  text-d7coration: none;
 }
 
 a:visited {
@@ -74,4 +74,14 @@ a:active {
   color: white;
   background-color: transparent;
   text-decoration: underline;
+}
+table {
+       font-family: Arial, Helvetica, sans-serif;
+       border-collapse: collapse;
+       width: 100%;
+}
+td, th {
+	     border: 7px double;
+	     text-align: center;
+         padding: 8px;
 }
