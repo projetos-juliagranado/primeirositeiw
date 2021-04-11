@@ -1,26 +1,44 @@
-body{
-
-	    	background-image: url(../img/ceu.jpg); 	    	 
-		    background-color:#1d3557;
+body{	    	  	 
+		    background-image: url(../img/fundo.jpg);		    
+		    background-color:#fff;
 		    font-size: 20px;
-		    width: 80%;
-		    margin-left: auto;
-		    margin-right:auto; 
+
+		    
 }	
+
+.container{
+	        width: 80%;
+		    margin-left: auto;
+		    margin-right:auto;
+
+}
+
+
+header,footer{
+	        width: 100%;	                		    
+		    background-color: rgba(0,0,0);
+		    margin-right:auto; 
+		    padding: 15px;
+
+}
+
+
 
 div{
 	    	font-size: 1em;
-	    	color: #F4F3EE;
+	    	color: 	#B22222;
+	    	
 	    	
 }
 
 
 h1,h2{
 	    	font-size: 2em;
-		    color:#F4F3EE;
-		    text-align: center;
-		    text-shadow: 2px 2px 5px #01BAEF;		   
-		    font-style: italic;		  
+		    color:#B22222;
+		    text-align: center;		    		   
+		    font-style: italic;	
+		    margin-top:2%;
+	        margin-bottom:2%;		  
 } 
 
 
@@ -28,17 +46,25 @@ p{
 	        text-align: center;
 	        font-size: 25px; 
 	        font-style:italic;
-	        color:  #F4F3EE;	        	         	         	  
+	        color: #fff;
+	        margin-top:2%;
+	        margin-bottom:3%;	        	         	         	  
+}
+
+.centro{
+	       text-align: center;
+	       color: 	#B22222;
+
 }
 
 
 
 figure{
     	    text-align: center; 
-    	    border: 7px double;
-	        border-color: #4682B4;	       
+    	    border: 7px solid ;
+	        border-color: #696969;	       
     	    border-radius: 12px;
-	        border-width: 2px 15px;
+	        border-width: 7px 7px;
     	   
     	        	   
 } 
@@ -48,18 +74,19 @@ img {
 
 ul, ol, li{     
 	       font-size: 25px;
-	       color:#F4F3EE; 
+	       color:#fff;
+	       text-align: center; 
 
 }
 
 a:link {
-  color: green;
+  color: #000080;
   background-color: transparent;
   text-d7coration: none;
 }
 
 a:visited {
-  color: blue;
+  color: #000080;
   background-color: transparent;
   text-decoration: none;
 }
@@ -75,6 +102,7 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
 table {
        font-family: Arial, Helvetica, sans-serif;
        border-collapse: collapse;
@@ -84,4 +112,5 @@ td, th {
 	     border: 7px double;
 	     text-align: center;
          padding: 8px;
+         color: #fff
 }
