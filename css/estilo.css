@@ -39,73 +39,68 @@
 		font-size: 1.2em;
 		line-height: 1.5em;	
 	}
+
 	
+	
+	#sobre{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		margin:0 auto;
 
-/*tela maior que 559px*/
-	@media screen and (max-width: 599px){
-		.container_body{
-			margin-top: 45%;
-		    }
-
-			p{
-				font-size: 1em;
-			}
-
-			.img_ao_lado_texto{
-				margin-bottom: 1%;
-				
-			}
-
-			.video{
-				width: 300px;
-				height: 280px;
-			    text-align: center;
-			}
-
-			
 	}
 
-/*tela maior que 600px*/
-	@media screen and (min-width: 600px){
-		.container_body{
-			margin-top: 40%;}
-	
+	#sobre .sobre{
+		text-align: center;
 	}
 
-/*tela maior que 768px*/
-	@media only screen and (min-width: 768px){
-		.container_body{
-			margin-top: 10%;
-			width: 80%; }
-	               
-	    header{
-			flex-direction: row;
-			position: relative;
-			height: 100px;}
+	.imgsobre{
+		width:20% ;
+		height:20% ;
+	}
 
-		.menu_opcoes{
-			position: absolute;
-			right: 5%;
-			top:45%;}
+	#galeria{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+	}
+
+	#galeria .galeria{
+
+		text-align: center;
+	}
+
 	
-
-		.menu_opcoes ul li{
-			display:inline ;
-			margin-left: 10px;}
-
-		.img_logo{
-			width: 20%;
-			position: absolute;
-			top: 20px;
-			left: 2%;}
-
-		.img_4_personagens{
-			width: 200px;
-		}
+	.imggaleria{
+		width: 90%;
+		border-radius: 10px;
+		margin-bottom: 8%;
+		margin-left: 2%;
+		margin-right: 2%;
 		
-}
+	  }
+	  
+	
+	  .p_galeria{
+		  font-size: 1.1em;
+		  color: #fff;
+		  flex-direction: row;
+		  flex-wrap: wrap;
+		  margin-left: 1%;
+		  margin-right: 2%;
+	  }
 
-/*fim configuração midia tela 700px*/
+	  .bottom{
+		 margin-bottom: 10%;
+	  }
+
+	  .top{
+		  margin-top: 10%;
+	  }
+
+
 
 	.fixo{
 		position: fixed;
@@ -145,6 +140,15 @@
 		text-align: center;
 	} 
 
+	.titulos_m{
+		text-align: left;
+		color:#D1DFE5;		  		  
+		font-weight: bolder;		    		   		    
+		margin-top:2%;
+		margin-bottom:2%;
+		font-family: 'Abel', sans-serif;
+	}
+
 
 
 	p{	      		      
@@ -157,7 +161,6 @@
 	}
 
 
-
 	.recuo_de_paragrafo {
 		text-indent:2em 
 	
@@ -165,7 +168,6 @@
 	 
 	.p_jusify{
 		text-align: justify;
-		text-indent: 40px;
 	}
 
 	.centro{
@@ -194,16 +196,14 @@
 	 }	 
 
 /*primeiras imagens da index*/
-	 .img_4_personagens{
-		 	
-		width: 100px;
-		height: 35%;
+	 .img_4_personagens{ 	
+		width: 40%;
 		object-fit: fill;
 	 }
 
 /*configuração para imagens que estão ao lado do texto*/
 	 .img_ao_lado_texto{
-		 align:left 80%;
+		 float: left;
 		 width: 200px;
 		 height:35%;
 		 margin-bottom: 1%;
@@ -226,15 +226,18 @@
 
 /*configuração listas*/
 
+	ul, ol, li{
+		position: relative;
+		margin: 5px 0;
+	}
+
 	.lista_texto_ul{
 
 	font-size: 1.0em; 
 	color:#fff;
 	margin-top: 7px;
 	font-family: 'Antic Slab', serif;
-	list-style: none;
-	
-	    
+	list-style: none;	    
 	}
 
 	.lista_texto_ol{
@@ -243,13 +246,43 @@
 	color:#fff;
 	margin-top: 7px;
 	font-family: 'Antic Slab', serif;
-	
 	}
 
 	.ajustes{
-		line-height: 1;
-		text-align: center;
+	line-height: 1;
+	text-align: center;
 	}
+
+	.sub_menu{
+	line-height: 1;
+	text-align: center;
+	float: left;
+	padding: 0;
+	}
+
+	.mangas{
+		width: 100%;
+	}
+
+	#primeiro_paragrafo{
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		
+	}
+
+	#personagens{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10%;
+	}
+
+	#filme{
+		margin-top: 10%;
+	}
+
+
 
 	
 /* fim configuração listas*/
@@ -263,15 +296,15 @@
 	}
 
 	a:visited {
-			  color: #354f76;
+			  color: #fff ;
 			  background-color: transparent;
 			  text-decoration: none;
 	}
 
 	a:hover {
-			  color: #fff;
+			  color: #354f76;
 			  background-color: transparent;
-			  text-decoration: underline;
+		
 	}
 
 	a:active {
@@ -288,10 +321,7 @@
 	          margin-left: auto;
 	          margin-right: auto;
 	          font-size: 1.0em;
-	          text-align: center;
-	          
-	          
-	                    
+	          text-align: center;                   
 	}
 
 	td, th {	      
@@ -299,6 +329,295 @@
 	          padding: 3%;
 	} 
 
-	/*quando a tela for maior que 600px*/
-@media screen and (min-width: 992px) {
-}
+
+
+	.item{
+		position: relative;
+		margin: 10px 0;
+	}
+
+	.item::before{
+		content: '';
+		left: 0;
+		right: 0;
+		padding: 10px 15px;
+		background-image: url('../img/dvd3.png');
+		background-repeat: no-repeat;
+		margin-right: 5px;
+	}
+
+	.form {
+		background: #fff;
+		border-radius: 20px;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 3%;
+	}
+
+	input[type=text] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		border: none;
+		border-bottom: 2px solid #264653;
+	  }	
+
+	  input[type=password] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		box-sizing: border-box;
+		border: none;
+		border-bottom: 2px solid #264653;
+	  }	
+
+	 
+
+   .padding{
+	   margin-top: 2%;
+	   margin-bottom: 2%;
+   }
+
+   input [type=submit]{
+	   border-radius: 10px;
+	   text-align: center;
+   }
+
+   input[type=submit]:hover {
+	background-color: #03738a;
+  }
+
+  
+
+  .imgform{
+	  text-align: center;
+	  width: 30%;
+	 text-align: center;
+  }
+
+  .p_form{
+	font-size: 1.1em; 
+	font-family: 'Abel', sans-serif;
+	color: #085e6f;
+	margin-top:5%;
+	margin-bottom:2%;	
+	text-align: center; 
+  }
+
+  .p_cb{
+	font-size: 1.1em; 
+	margin-bottom: 5%;
+	margin-top: 5%;
+	font-family: 'Abel', sans-serif;
+	color: #2e3030;
+	margin-top:5%;
+	margin-bottom:2%;	
+	text-align: center; 
+	  
+  }
+
+
+  
+
+
+	/*tela menor que 559px*/
+	@media screen and (max-width: 599px){
+		.container_body{
+			width: 90%;
+			margin-top: 100%;
+			}
+
+			p{
+				font-size: 1em;
+				
+				
+			}
+
+			.p_jusify{
+				text-align: center;
+			}
+
+			.img_ao_lado_texto{
+				margin-right: 15px;
+				margin-bottom: 1%;
+				width: 80%;
+			}
+
+			.img_centro{
+				width: 80%;
+				margin-right: 40%;
+			}
+
+			.video{
+				max-width: 100%;
+				width: auto;
+				max-height:  auto;
+			    text-align: center;
+		  }
+			ol,ul,li{
+				margin-top: 2%;
+				flex-wrap: wrap;
+				}
+
+			.mangas{
+				width: 100%;
+				text-align: center;
+				}
+
+				.form{
+					width: 100%;
+				}
+
+
+
+				#primeiro_paragrafo p{
+					text-align: left;
+					
+				}
+
+				#manga p{
+					text-align: left;
+				}
+
+				.titulos_m{
+					text-align: center;
+				}
+	}
+
+	/*tela maior que 600px*/
+	@media screen and (min-width: 600px){
+		.container_body{
+			margin-top: 40%;}
+			
+		
+	}
+
+	/*tela maior que 768px*/
+	@media only screen and (min-width: 768px){
+		.container_body{
+			margin-top: 10%;
+			width: 80%; }
+				
+		header{
+			flex-direction: row;
+			position: relative;
+			height: 100px;}
+
+			nav {
+				float: left;
+			}
+			nav ul ul {
+				display: none;
+			}
+		
+			nav ul li:hover > ul {
+				display: block;
+				}
+		
+			nav ul {
+				margin-top: 2px;
+				padding: 0 10px;  
+				list-style: none;
+				position: relative;
+				display: inline-table;
+				margin-right: -80px;
+			}
+				nav ul li {
+				float: left;
+			}
+				nav ul li:hover {
+				border-bottom: 5px solid #354f76;
+				color: #fff;
+						
+					}
+				nav ul li a:hover {
+					color: #fff;
+					}
+				
+				nav ul li a {
+					display: block; 
+					padding: 15px 15px;
+					font-size: 75%;
+					font-family: 'Antic Slab', serif;
+					color: rgba(28,28,28); 
+					text-decoration: none;
+				}
+				nav ul ul {
+				border-radius: 0px; 
+				padding: 0;
+				position: absolute;
+				top: 100%;
+				box-shadow: 0px 0px 9px rgba(28,28,28,0.5);
+			}
+				nav ul ul li {
+					float: none; 
+					position: relative;
+				}
+					nav ul ul li a {
+						padding: 15px 40px;
+						color: rgba(28,28,28);
+					}
+			
+			nav ul ul:before {
+					content: "";
+					display: block;
+					height: 20px;
+					position: absolute;
+					top: -20px;
+					width: 100%;
+				}
+
+		.menu_opcoes{
+			position: absolute;
+			right: 8%;
+			top:40%;}
+
+
+		.menu_opcoes ul li{
+			display:inline ;
+			margin-left: 5px;}
+
+		.img_logo{
+			position: absolute;
+			top: 20px;
+			left: 0%;}
+
+		.img_4_personagens{
+			width: 15%;
+		}
+
+		#sobre, #galeria{
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		#sobre h2, h3, p {
+			width: 100%;
+			text-align: center;
+		}
+
+		#sobre .sobre, #galeria .galeria{
+			width: 25%;
+			text-align: center;
+
+		}
+
+		.imggaleria:hover {
+			width: 400px;
+			position:relative;
+			transition: width 2s;
+		  }
+
+		  .top_g{
+			  top:10%;
+		  }
+
+		  
+		  
+
+		
+			
+		
+	}
